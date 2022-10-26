@@ -17,6 +17,7 @@ body{
 }
 main{
     background-color: #ebebeb;
+  
     margin-top: -20px;
 }
 
@@ -43,6 +44,9 @@ main{
     text-align: center;
 
 }
+.logo-page_slogan--text{
+    font-size: 20px;
+}
 .logo-page__slogan{
     width: 100%;
     text-align: center;
@@ -60,6 +64,8 @@ main{
     color: grey;
     border-radius: 6px;
     border:none;
+    min-height: 50px;
+    font-size: 20px;
 }
 .logo-page__searchbar--iconoBusqueda{
     color: grey;
@@ -67,6 +73,7 @@ main{
     z-index: 1;
     top: 50%;
     right: 10%;
+    font-size: 25px;
     transform: translate(0%,-50%);
 }
 
@@ -77,6 +84,7 @@ main{
 .lista-navegacion{
     display: none;
     justify-content:space-between;
+    font-size: 25px;
 }
 
 
@@ -141,25 +149,41 @@ ul{
     text-align: center;
 }
 
+
+/*:::::::::::::::::::::::::::::::::::::footer:::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
 .TituloPie{
     text-align: center;
     margin-top: 20px;
 }
+.titulopie-div{
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.titulopie-div__seccion{
+    width: 100%;
+}
+
 .TituloPie p{
    font-weight: bold;
-   font-size: 14px;
-   margin: 5px;
+   font-size: 20px;
+   margin: 2px;
+   padding-left: 40px;
+   padding-right: 40px;
 }
 
 .TituloPie h3{
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 20px;
     margin: 10px;
  }
 
 .TituloPie i{
     margin-top: 15px;
-    font-size: 2em;
+    font-size: 50px;
     color: #1259c3 ;
 }
 
@@ -168,8 +192,8 @@ ul{
     border-top-color: #ebebeb;    
     border-width: 2px;
     margin-top: 30px;
-    font-size: 12px;
-    font-style: italic;
+    font-size: 16px;
+    font-style:bolder;
     font-weight: normal;
     text-align: center;
     padding: 5px;
@@ -198,7 +222,7 @@ main section article i{
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
+    border: 1px solid #39b54a;;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
@@ -213,13 +237,13 @@ main section article i{
 
 h2.infoProducto{
     color: rgb(100, 100, 100);
-    font-size: 24px;
+    font-size: 25px;
     font-weight:bolder;
     text-align: left;
 }
 h2.tituloForm{
     color: rgb(100, 100, 100);
-    font-size: 24px;
+    font-size: 25px;
     font-weight:bolder;
     text-align: left;
     font-family: 'Roboto';
@@ -388,13 +412,11 @@ h2.tituloForm{
         margin-bottom: 15px;
         width: 35%;
     }
-    .articulosBox {
-        flex-wrap: wrap;
-    }
+
    }
 
    /*Desktop*/ 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .divBurger{
         display: none;
     }
@@ -429,6 +451,16 @@ h2.tituloForm{
         text-align: right;
     }
 
+
+    .titulopie-div{
+        display: flex;
+        flex-wrap:nowrap ;
+    }
+    
+    .titulopie-div__seccion{
+        width: 35%;
+    }
+    
 
 }
 
